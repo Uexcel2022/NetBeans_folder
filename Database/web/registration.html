@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="registration.jsp" method="post">
+            <label for="fn">First name: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="firsName" id="fn" pattern="[A-Z][a-z]{2,}" placeholder=" example: Jane" required ><br><br>
+            
+            <label for="ln">Last name: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="lastName" id="ln" pattern="[A-Z][a-z]{2,}" placeholder=" example: Desmond"  required> <br><br>
+            
+             <label for="ph">Phone number: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="tel" name="phone" id="ph" pattern="(0|\+234)[7-9][01][0-9]{8}" required><br><br>
+            
+            <label for="em">Email: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="email" pattern="[a-z._0-9]+@[a-z0-9]+[a-z0-9.]*\.[a-z]{2,3}" id="em" required><br><br>
+            
+            <label for="us">Username: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="username" id="us" required><br><br>
+            
+            <label for="ps1">Password: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="password1" id="pas1" required><br><br>
+           
+            <label for="ps2">Confirm password: </label>&nbsp;
+            <input type="password" name="password2" id="pas2" required><br><br>
+            
+            <input type="radio" id="M" name="gender" value="male"  required>
+            <label for="M">Male</label>
+            
+            <input type="radio" id="F" name="gender" value="female" required>
+            <label for="F">Female</label><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
