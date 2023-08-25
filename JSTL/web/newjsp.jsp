@@ -5,7 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="c" uri="jakarta.tags.core" %>
+<%@taglib prefix="fn" uri="jakarta.tags.functions" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,7 +15,8 @@
     </head>
     <body>
         <br>
-        <c:forEach items ="${Person}" var= "s">
+        <c:forEach items ="${Person}" var= "s" varStatus="status" step="1" begin="0">
+            <%-- status.count, status.index, --%>
             First name: ${s.fName} <br>
             Last name: ${s.lName} <br>
             Gender: ${s.gender} <br>
@@ -22,7 +24,9 @@
             Email: ${s.email} <br><br>       
     </c:forEach>
         
+          <
         
+    <
         <%--
         for one object at a time
         First name: <c:out value="${Person.fName}"/><br>
