@@ -23,9 +23,9 @@
             <form action="login" method="post">
                 
                 <label>Username:</label>
-                <input type="text" name="username" autocomplete="off" ><br><br>
+                <input type="text" name="username" autocomplete="off" required="required"><br><br>
                 <label>Password:</label>
-                <input type="password" name="password" ><br><br>
+                <input type="password" name="password"  required="required"><br><br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp;
                 <button type="submit">Submit</button>
