@@ -49,7 +49,7 @@
          Statement st = con.createStatement();
          st.executeQuery(query);
          out.println("Data sumitted successfully!");
-
++
         %>
         
         <%--

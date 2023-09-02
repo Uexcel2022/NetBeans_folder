@@ -13,7 +13,8 @@
         <title>profile</title>
     </head>
     <body>
-        <p>Profile:</p>
+        
+        <p>Profile:</p>      
         <p>First name: ${param.firstName}</p>
         <p>Last name: ${param.lastName}</p><br>
         

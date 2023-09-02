@@ -13,5 +13,6 @@
     </head>
     <body bgcolor="red">
         <h3>Sorry..; we encountered error; could not fulfill your request!</h3>
+         <a href="index.html">Back to home page </a><br>
     </body>
 </html>

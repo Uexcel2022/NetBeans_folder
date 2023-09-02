@@ -19,7 +19,7 @@
          eg <c:url var="display" value="/displayprofile.jsp">
         c:url can be use  used with param to pass a value to other page 
         --%>
-
+        
         <c:url var="firstName" value="Excllence" scope="request" ></c:url>
         <c:url var="lastName" value="Udoka" scope="request"></c:url>
         
@@ -27,8 +27,8 @@
             <c:param name="firstName" value="${firstName}"></c:param>
             <c:param name="lastName" value="${lastName}"></c:param>
         </c:url>
-
+       
         <c:redirect url="${display}"></c:redirect>
-
+        
     </body>
 </html>

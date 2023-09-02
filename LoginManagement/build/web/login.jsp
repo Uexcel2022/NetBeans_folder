@@ -15,19 +15,17 @@
     <body>
 
     <c:set var="user" value="${login}"></c:set>
-
-    <c:choose>
-        
       
+    <c:choose>
         
         <c:when test="${user==null}">
             
             <form action="login" method="post">
                 
                 <label>Username:</label>
-                <input type="text" name="username" autocomplete="off" required><br><br>
+                <input type="text" name="username" autocomplete="off" ><br><br>
                 <label>Password:</label>
-                <input type="password" name="password" required=""><br><br>
+                <input type="password" name="password" ><br><br>
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 &nbsp;
                 <button type="submit">Submit</button>
@@ -40,8 +38,7 @@
         </c:when>
 
         <c:otherwise>
-            <c:url value="welcome.jsp" var="welcome"></c:url>
-            <c:redirect url="${welcome}"></c:redirect>
+            <p>You have logged in already!</p>
         </c:otherwise>
 
     </c:choose>
