@@ -67,7 +67,7 @@ public class SecondFilter implements Filter {
         if (debug) {
             log("SecondFilter:DoAfterProcessing");
         }
-
+      
         // Write code here to process the request and/or response after
         // the rest of the filter chain is invoked.
         // For example, a logging filter might log the attributes on the
@@ -112,6 +112,8 @@ public class SecondFilter implements Filter {
             String name =req.getParameter("name");
             if (name.length() >=3) {
                 chain.doFilter(request, response);
+                System.out.println("Second Servlet");
+                
             } else {
                 out.println("<!DOCTYPE html>\n"
                         + "<html>\n"
@@ -124,6 +126,7 @@ public class SecondFilter implements Filter {
                         + "</html>");
 
             }
+            
         } catch (Throwable t) {
             // If an exception is thrown somewhere down the filter chain,
             // we still want to execute our after processing, and then

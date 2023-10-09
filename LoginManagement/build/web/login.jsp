@@ -20,6 +20,10 @@
         
         <c:when test="${user==null}">
             
+            <c:if test="${param.error}">
+                <h5><c:out value="Invalid username/password!"></c:out></h5>
+            </c:if>
+            
             <form action="login" method="post">
                 
                 <label>Username:</label>
@@ -32,13 +36,13 @@
 
             </form><br>
 
-            <a href="index.html">Back to home page </a><br>
+            <a href="index.jsp">Back to home page </a><br>
             <a href="about_us.jsp">About Us</a>
             
         </c:when>
 
         <c:otherwise>
-            <p>You have logged in already!</p>
+            <c:redirect url="login"></c:redirect>
         </c:otherwise>
 
     </c:choose>

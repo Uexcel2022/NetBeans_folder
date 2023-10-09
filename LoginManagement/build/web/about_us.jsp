@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <a href="index.html">Back to home page </a><br>
+        <a href="index.jsp">Back to home page </a><br>
         <a href="login.jsp">Login</a>
     </body>
 </html>

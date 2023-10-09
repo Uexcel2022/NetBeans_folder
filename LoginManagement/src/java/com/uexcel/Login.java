@@ -46,7 +46,7 @@ public class Login extends HttpServlet {
         if (firstName.equals("error")) {
             throw new IOException();
         } else if (firstName.isEmpty()) {
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("login.jsp?error=true");
         } else {
             HttpSession session = request.getSession();
             session.setAttribute("login", firstName);

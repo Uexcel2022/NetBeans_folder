@@ -85,6 +85,8 @@ public class MyFilter implements Filter {
 	PrintWriter respOut = new PrintWriter(response.getWriter());
 	respOut.println("<P><B>This has been appended by an intrusive filter.</B>");
          */
+        
+      
     }
 
     /**
@@ -112,6 +114,8 @@ public class MyFilter implements Filter {
             int num = Integer.parseInt(req.getParameter("num"));
             if (num > 1) {
                 chain.doFilter(request, response);
+                System.out.println("Myfilter");
+                response.getWriter().append("<br/> Myfilter");
             } else {
                 out.println("<!DOCTYPE html>\n"
                         + "<html>\n"
@@ -122,8 +126,11 @@ public class MyFilter implements Filter {
                         + "    </head>\n"
                         + "    <body> <p>Invalid input!</p> </body"
                         + "</html>");
-
+           
             }
+            
+          
+           
         } catch (Throwable t) {
             // If an exception is thrown somewhere down the filter chain,
             // we still want to execute our after processing, and then

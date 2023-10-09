@@ -6,10 +6,6 @@ package com.uexcel;
 
 import java.sql.*;
 
-/**
- *
- * @author Uexcel
- */
 public class LoginDao {
 
     public static String loginValidation(String username, String password) {

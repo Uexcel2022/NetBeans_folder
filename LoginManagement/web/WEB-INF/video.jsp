@@ -33,7 +33,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
                 <br>
-                <a href="index.html" target="_blank">Back to home page </a><br>
+                <a href="index.jsp">Back to home page </a><br>
                 <a href="logout">Logout</a> 
             </c:otherwise>
 
